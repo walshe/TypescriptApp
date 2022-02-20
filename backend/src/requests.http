@@ -1,0 +1,38 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+     "username": "user1",
+     "password" : "pass"
+}
+
+###
+
+GET http://localhost:8080/users?id=1
+Authorization: vk6696xa6x
+
+###
+
+GET http://localhost:8080/users?name=e
+Authorization: vk6696xa6x
+
+###
+PUT http://localhost:8080/users
+Content-Type: application/json
+Authorization: vk6696xa6x
+
+{
+     "name" : "eddie2",
+     "age" : 21,
+     "email" : "email@email.com",
+     "password" : "pass",
+     "workingPosition" : 3
+}
+
+DELETE http://localhost:8080/users?id=123
+Content-Type: application/json
+Authorization: vk6696xa6x
+
+###
+GET http://localhost:8080/monitor
+Authorization: vk6696xa6x
